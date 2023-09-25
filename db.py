@@ -20,19 +20,6 @@ DB_HOST = getenv("POSTGRES_SERVER", "postgres_db")
 DB_NAME = getenv("POSTGRES_DB", "staysynergy")
 DB_URL = f'postgresql://{DB_USER}:{DB_PASSWORD}@postgres_db:5432/{DB_NAME}'
 
-"""DB_TEST_USER = getenv("TEST_USER", "postgres")
-DB_TEST_PASSWORD = getenv("TEST_PASSWORD", "newpassword")
-DB_TEST_HOST = getenv("TEST_SERVER", "postgres_db")
-DB_TEST_NAME = getenv("TEST_DB", "staysynergy")
-# test databases query builder
-TEST_DB_URL = f'postgresql://{DB_TEST_USER}:{DB_TEST_PASSWORD}@postgres_db:5432/{DB_TEST_NAME}'
-
-config = Config()
-TESTING = config('TESTING', cast=bool, default=False)
-if TESTING:
-    database = Database(TEST_DB_URL)
-else:
-    database = Database(DB_URL)"""
 database = Database(DB_URL)
 
 engine = create_engine(

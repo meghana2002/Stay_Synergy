@@ -30,33 +30,26 @@ def get_db():
 
 
 tags_metadata = [
-    {
+    {   
         "name": "users",
-        "description": "Operations with users. The **login** logic is also here.",
     },
     {
         "name": "roomtypes",
-        "description": "Roomtypes (with characteristics like price and features) is basis for rooms.",
     },
     {
         "name": "rooms",
-        "description": "Rooms with characteristics based on their type.",
     },
     {
         "name": "guests",
-        "description": "Guests who can make a bookings.",
     },
     {
         "name": "bookings",
-        "description": "Each booking connected with guest and room. Checkbox 'is_paid' calculate automatically based on costs and paymnets.",
     },
     {
         "name": "requests",
-        "description": "Guest can make request. It can cost money (included in total booking price).",
     },
     {
         "name": "payments",
-        "description": "Payments from guests. Based on them calculate if booking is paid.",
     },
 
 ]
