@@ -1,5 +1,4 @@
-# Stay_Synergy
-# StaySynergy - Hospitality Management System
+# Stay Synergy - Hospitality Management System
 
 StaySynergy is a comprehensive Hospitality Management System designed to streamline and enhance operations within the hospitality industry while providing a convenient booking interface for guests. With StaySynergy, guests can easily book rooms online, eliminating the need for lengthy phone calls. This system offers a range of modules and submodules to efficiently manage various aspects of accommodation services, ensuring a seamless and personalized stay for guests while optimizing room management, housekeeping, billing, and customer relationships.
 
