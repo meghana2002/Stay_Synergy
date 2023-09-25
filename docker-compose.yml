@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  hotel_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    networks:
+      - default
+
+  postgres_db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: newpassword
+      POSTGRES_DB: staysynergy
+    ports:
+      - "5433:5432"
+    networks:
+      - default
+
+
+networks:
+  default:
+    name: app_network
+    external: true
